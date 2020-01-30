@@ -12,23 +12,23 @@ const Form = ({ onSubmit }) => (
       <input type="text" placeholder="URL" />
       <section className={styles.methods}>
         <label>
-          <input type="radio" value="get"></input>
+          <input type="radio" name="method" value="get"></input>
           <span>GET</span>
         </label>
         <label>
-          <input type="radio" value="post"></input>
+          <input type="radio" name="method" value="post"></input>
           <span>POST</span>
         </label>
         <label>
-          <input type="radio" value="put"></input>
+          <input type="radio" name="method" value="put"></input>
           <span>PUT</span>
         </label>
         <label>
-          <input type="radio" value="patch"></input>
+          <input type="radio" name="method" value="patch"></input>
           <span>PATCH</span>
         </label>
         <label>
-          <input type="radio" value="delete"></input>
+          <input type="radio" name="method" value="delete"></input>
           <span>DELETE</span>
         </label>
         <button>Go!</button>
