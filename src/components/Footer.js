@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
     return (
       <footer className={styles.Footer}>
-        <p><a href="https://www.github.com/llastflowers">llastflowers - 2020</a></p>
+        <p><a href="https://resty.netlify.com/">credit</a></p>
       </footer>
     );
   }
