@@ -1,34 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import styles from '../App.css';
+import styles from './App.css';
 
 const Form = ({ onSubmit }) => (
-  <form onSubmit={onSubmit}>
+  <form className={styles.Form} onSubmit={onSubmit}>
     <input type="text" placeholder="URL" />
-    <label>
-      <input type="radio" value="get"></input>
-      <span>GET</span>
-    </label>
-    <label>
-      <input type="radio" value="post"></input>
-      <span>POST</span>
-    </label>
-    <label>
-      <input type="radio" value="put"></input>
-      <span>PUT</span>
-    </label>
-    <label>
-      <input type="radio" value="patch"></input>
-      <span>PATCH</span>
-    </label>
-    <label>
-      <input type="radio" value="delete"></input>
-      <span>DELETE</span>
-    </label>
-    <section>
+    <section className={styles.methods}>
+      <label>
+        <input type="radio" value="get"></input>
+        <span>GET</span>
+      </label>
+      <label>
+        <input type="radio" value="post"></input>
+        <span>POST</span>
+      </label>
+      <label>
+        <input type="radio" value="put"></input>
+        <span>PUT</span>
+      </label>
+      <label>
+        <input type="radio" value="patch"></input>
+        <span>PATCH</span>
+      </label>
+      <label>
+        <input type="radio" value="delete"></input>
+        <span>DELETE</span>
+      </label>
       <button>Go!</button>
-      <button type="reset">Clear</button>
     </section>
+    <textarea rows="9" cols="40" placeholder="Raw JSON Body" />
+    <div className={styles.responseField}>
+        
+    </div>
   </form>
 );
 

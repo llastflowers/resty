@@ -1,20 +1,89 @@
+body {
+    box-sizing: border-box;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    line-height: 1;
+}
+
+.Header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #204060;
+    color: white;
+    height: 4em;
+    line-height: 4em;
+    padding: 0 2em;
+
+    h1 {
+        font-size: 2em;
+        font-weight: 700;
+    }
+}
+
+.Form {
+    margin: 20px 27%;
+
+    .methods {
+        display: flex;
+        margin: 1em 0;
+    }
+
+    input[type="text"] {
+        width: 508px;
+    }
+    
+    input[type="radio"] {
+        display: none;
+    }
+    
+    label:hover {
+        background-color: rgb(221, 221, 221);
+        cursor: pointer;
+    }
+
+    label {
+        padding: 5px 10px;
+        font-size: 20px;
+        margin-right: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    button {
+        display: flex;
+        align-items: flex-start;
+        text-align: center;
+        font-size: 11px;
+        padding: 1px 6px;
+        height: 18px;
+        margin-top: 6px;
+    }
+
+    .responseField {
+        margin-top: 20px;
+        background: #f5f5f5;
+        border: 1px solid #ccc;
+        height: 400px;
+        width: 508px;
+    }
+}
+
 .Footer {
     text-align: center;
     position: absolute;
-    bottom: 1%;
+    bottom: 2%;
     right: 47%;
+    font-size: 15px;
 }
 
 a {
-    font-size: 15px;
     font-family: verdana;
-    color: white;
-    text-shadow: 1px 1px black;
+    color: black;
     cursor: pointer;
     text-decoration: none;
 }
 
 a:visited {
     text-decoration: none;
-    color: white;
+    color: black;
 }
