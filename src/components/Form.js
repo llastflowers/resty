@@ -9,7 +9,7 @@ const Form = ({ onChange, onSubmit }) => (
       <ul></ul>
     </div>
     <div>
-      <input type="text" placeholder="URL" />
+      <input type="text" onChange={onChange} name="URL" placeholder="URL" />
       <section className={styles.methods}>
         <label>
           <input type="radio" name="method" value="get"></input>
