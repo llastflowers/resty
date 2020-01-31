@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './App.css';
 
-const Form = ({ onSubmit }) => (
+const Form = ({ onChange, onSubmit }) => (
   <form className={styles.Form} onSubmit={onSubmit}>
     <div className={styles.historyContainer}>
       <h2>History</h2>
@@ -33,16 +33,14 @@ const Form = ({ onSubmit }) => (
         </label>
         <button>Go!</button>
       </section>
-      <textarea rows="9" cols="40" placeholder="Raw JSON Body" />
-      <div className={styles.responseField}>
-        
-      </div>
+      <textarea onChange={onChange} name="rawJSON" rows="9" cols="40" placeholder="Raw JSON Body" />
     </div>
   </form>
 );
 
 Form.propTypes = {
-  onSubmit: PropTypes.func.isRequired
+  // onSubmit: PropTypes.func.isRequired
+  onChange: PropTypes.func
 };
 
 export default Form;
