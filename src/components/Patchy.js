@@ -6,6 +6,7 @@ export default class Patchy extends Component{
     URL: '',
     method: '',
     rawJSON: '',
+    response: '',
   }
 
   handleChange = ({ target }) => {
@@ -13,9 +14,11 @@ export default class Patchy extends Component{
   }
   handleSubmit = event => {
     event.preventDefault();
-    fetch(this.state.URL);
-    //get response and do something with it
-    //console log response
+    fetch(this.state.URL)
+      .then(res => {
+        console.log(res.body);
+        return res.json();
+      });
   }
 
   render() {

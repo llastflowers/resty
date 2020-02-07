@@ -12,23 +12,23 @@ const Form = ({ onChange, onSubmit }) => (
       <input type="text" onChange={onChange} name="URL" placeholder="URL" />
       <section className={styles.methods}>
         <label>
-          <input type="radio" name="method" value="get"></input>
+          <input type="radio" onChange={onChange} name="method" value="GET"></input>
           <span>GET</span>
         </label>
         <label>
-          <input type="radio" name="method" value="post"></input>
+          <input type="radio" onChange={onChange} name="method" value="POST"></input>
           <span>POST</span>
         </label>
         <label>
-          <input type="radio" name="method" value="put"></input>
+          <input type="radio" onChange={onChange} name="method" value="PUT"></input>
           <span>PUT</span>
         </label>
         <label>
-          <input type="radio" name="method" value="patch"></input>
+          <input type="radio" onChange={onChange} name="method" value="PATCH"></input>
           <span>PATCH</span>
         </label>
         <label>
-          <input type="radio" name="method" value="delete"></input>
+          <input type="radio" onChange={onChange} name="method" value="DELETE"></input>
           <span>DELETE</span>
         </label>
         <button>Go!</button>
@@ -39,7 +39,7 @@ const Form = ({ onChange, onSubmit }) => (
 );
 
 Form.propTypes = {
-  // onSubmit: PropTypes.func.isRequired
+  onSubmit: PropTypes.func,
   onChange: PropTypes.func
 };
 
