@@ -1,17 +1,17 @@
-// import React from 'react';
-// import PropTypes from 'prop-types';
-// import styles from '../App.css';
+import React from 'react';
+import PropTypes from 'prop-types';
+import styles from './App.css';
 
-// const Response = ({ rawJSON }) => (
-//   <>
-//     <div className={styles.responseField}>
-//       <p>{something(...rawJSON)}</p>
-//     </div>
-//   </>
-// );
+const Response = ({ response }) => (
+  <>
+    <div className={styles.responseField}>
+      <p>{response}</p>
+    </div>
+  </>
+);
 
-// Response.propTypes = {
-//   rawJSON: PropTypes.string.isRequired,
-// };
+Response.propTypes = {
+  response: PropTypes.string.isRequired,
+};
 
-// export default Response;
+export default Response;
